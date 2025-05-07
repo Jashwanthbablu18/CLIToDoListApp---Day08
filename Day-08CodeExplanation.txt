@@ -1,0 +1,52 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge."
+
+
+1. show_intro():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+2. Todos:
+   - Todos is an empty list that will store the tasks added by the user.
+
+3. show_menu():
+   - This Function to represent introduction of this assignment / Project. Starting with a little welcome message.
+
+4. add_task():
+   - Asks user to enter to-do into Todo list, displays successful msg after successfully added.
+
+5. view_tasks():
+   - Displays all tasks currently in Todos. If the list is empty, it alerts the user.
+
+6. update_task():
+   - Shows the current tasks and asks the user to select a task number to update. It replaces the selected task with new input from the user, if the task number is valid.
+
+7. remove_task():
+   - Similar to updating, but instead removes the task at the specified position if valid. It confirms removal with a message.
+
+8. PopLastTask():
+   - Removes and displays the last task in `Todos`. If the list is empty, it alerts the user.
+
+9. slice_tasks():
+   - Offers two options: display the first three tasks or the last two tasks from Todos. 
+     It handles cases where there may be fewer than three or two tasks respectively.
+
+10. main():
+    - Calls show_intro() to display introduction message.
+    - Enters into a while loop displaying the menu and processing user input. Based on user choice, it calls corresponding functions.
+    - The loop continues until the user selects option 7 (Exit), which breaks the loop and ends the program.
+
+11. Program execution:
+    - The if __name__ == "__main__": block ensures that main() is called only when this script is executed directly (not when imported as a module).
+
+What I've learnt:
+- Lists: Python lists are a type of sequence data structure, which means stores the data in sequence manner with 0-index based.
+- Lists are represented using [ ]. 
+- Lists in python are mutable, ordered, can store multiple datatypes and dynamic size.
+- Mutable means in lists we can change their content, i.e modifying, adding, removing elements.
+- Ordered means the elements maintains an order first element will be 0 index, second will be 1 index and so on... Lists are indexed starting from 0.
+- Lists can store multiple datatypes like integer, float, complex, boolean ... nested list also.
+- Lists are dynamic sized means after creating list we can add, remove elements from list.
+- And I've explored list methods like .append(), .pop(), .len(), enumerate() and negative and positive slicing.
+- So, finally lists are mutable, dynamic size, holds multiple data types, has rich set of methods, easy iteration and comprehension, supports slicing.
+- Some disadvantages of lists are; Slower than tuples (becoz mutable, has manage changes), more memory usage (becoz over allocate memory to support resizing),
+  cannot be used as dictionary keys (not hashable, due to mutability), Slower for some operations (like searching), Risk of accidental modification and not
+  ideal for fixed or constant data.
